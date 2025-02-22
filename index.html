@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="fa-solid fa-bars" id="menu-bar"></div>
+        <a href="#home" id="logo"><span>Flour</span>Power</a>
+        <i id="search-btn" class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-plus"></i>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+            <a href="#form" id="login-btn">Login</a>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here ... ">
+            <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+
+
+
+    </header>
+
+    <div class="login-form-container">
+
+        <form action="">
+            <i class="fa-solid fa-xmark" id="form-close"></i>
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <input type="submit" value="login now" class="btn">
+            <a href="">Forgot Password?</a>
+            <a href="">Register a new account</a>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>indulge in sweet<br> bakery everyday</h3>
+            <p>handmade with love</p>
+            <a href="#" class="btn">View Menu</a><a href="#" class="btn">order now</a>
+        </div>
+
+        <div class="controls">
+            <button class="vid-btn active" data-src="vid1.mp4"></button>
+            <button class="vid-btn" data-src="vid2.mp4"></button>
+            <button class="vid-btn" data-src="vid3.mp4"></button>
+            <button class="vid-btn" data-src="vid4.mp4"></button>
+            <button class="vid-btn" data-src="vid5.mp4"></button>
+            <button class="vid-btn" data-src="vid6.mp4"></button>
+            <button class="vid-btn" data-src="vid7.mp4"></button>
+        </div>
+
+        <div class="video-ctr">
+            <video src="vid1.mp4" id="videobg" loop autoplay muted></video>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1>About Us</h1>
+        <h2>why choose us?</h2>
+        <div class="container">
+            <div class="image">
+                <img src="images/aboutus.jpg" alt="">
+            </div>
+            <div class="aboutus">
+                <h3 class="logo"><span>Flour</span>Power</h3>
+                <p>Indulge in the finest selection of freshly baked bread, pastries, and custom cakes crafted with love
+                    and care. At Flour Power, we believe every bite should be an experience of joy and quality.</p>
+                <ul>
+                    <li> Premium Ingredients: Only the best for your taste buds! </li>
+                    <li>Custom Creations: Cakes and treats tailored to your needs.</li>
+                    <li>Always Fresh: Baked daily to perfection.</li>
+                </ul>
+                <div class="icon-container">
+                    <div class="icon">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <span>Affordable Prices</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>24/7 Service</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <span>Birthday Cakes</span>
+                    </div>
+                </div>
+                <p>Let us sweeten your day, order now!</p>
+                <div class="learnmore">
+                    <button class="btn">learn more</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="menu" id="menu">
+        <h4>our Menu</h4>
+        <h1>Today's special</h1>
+        <div class="menu-content">
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img1.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Strawberry-Filled Croissant</h3>
+                    <p class="description">A buttery, flaky croissant stuffed with fresh strawberries and a dollop of
+                        sweet cream, topped with a dusting of powdered sugar for a perfect blend of textures and
+                        flavors.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img2.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Chocolate Cherry Muffin</h3>
+                    <p class="description">A rich, moist chocolate muffin crowned with creamy chocolate frosting and
+                        adorned with a juicy cherry, making every bite a delightful indulgence.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img5.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Chocolate Deluxe Cupcake</h3>
+                    <p class="description">A decadent chocolate cupcake topped with velvety frosting, garnished with
+                        chocolate sticks and a fresh raspberry for an elegant finish.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img3.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Chocolate Chip Muffins</h3>
+                    <p class="description">Fluffy chocolate muffins topped with a generous layer of creamy chocolate
+                        frosting and sprinkled with white chocolate chips, perfect for a delightful treat.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img4.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Chocolate-Drizzled Pastry Rolls</h3>
+                    <p class="description">Golden-brown pastry rolls lightly crisped and drizzled with rich chocolate
+                        syrup, offering a delightful crunch with every bite,offering a delightful crunch with every
+                        bite.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img9.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Decadent Chocolate Cake Slice</h3>
+                    <p class="description">A luscious slice of chocolate cake layered with smooth chocolate ganache and
+                        topped with glossy icing, perfect for chocolate lovers.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img6.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Chocolate-Sprinkled Mini Donuts</h3>
+                    <p class="description">Soft and fluffy mini donuts coated with a chocolate glaze and sprinkled with
+                        fine chocolate bits for a fun and tasty snack.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img7.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>French Macarons</h3>
+                    <p class="description"> A vibrant selection of French macarons with crispy shells and a creamy
+                        filling, featuring a variety of delightful flavors and colors.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-content">
+                    <img src="images/img8.jpg" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="box-content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>Chocolate-Coated Brownie Bars</h3>
+                    <p class="description">Rich and moist brownie bars dipped in a silky layer of chocolate glaze,
+                        making for a satisfying dessert.</p>
+                    <p class="price">12.25$</p>
+                    <div class="button"><button class="order">Add to Cart <i
+                                class="fa-solid fa-cart-shopping"></i></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="review">
+        <h4>customer's review</h4>
+        <h1>recent reviews</h1>
+        <div class="review-container">
+            <div class="review-content">
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/man-3.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Johnny Depp</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/women-2.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Mark Howling</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/woman-1.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Christine Johns</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/man-3.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Johnny Depp</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/man-3.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Johnny Depp</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/man-3.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Johnny Depp</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/man-3.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Johnny Depp</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+                <div class="review-box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="author">
+                        <img src="images/man-3.jpg" alt="">
+                        <div class="author-content">
+                            <h2>Johnny Depp</h2>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam minima recusandae culpa
+                        optio expedita sunt dolorum, minus, modi neque nulla excepturi dignissimos fuga nihil error
+                        similique pariatur quam adipisci!</p>
+                </div>
+            </div>
+            <div class="fa fa-angle-left" id="prev"></div>
+            <div class="fa fa-angle-right" id="next"></div>
+        </div>
+
+        <div class="reviewbtn">
+            <button class="rev-btn">Write your Review<i class="fa-solid fa-pen-to-square"></i></button>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <h4>Birthday Cake</h4>
+        <h1>Order yours now</h1>
+            <div class="input-container">
+                <i class='bx bxs-user'></i>
+                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+            </div>
+
+            <div class="input-container">
+                <i class='bx bxs-envelope'></i>
+                <input class="input-field" type="email" placeholder="Email" name="email">
+            </div>
+            <div class="input-container">
+                <i class='bx bxs-user'></i>
+                <input class="input-field" type="text" placeholder="Phone Number" name="usrnm">
+            </div>
+            <div class="input-container">
+                <i class='bx bxs-user'></i>
+                <input class="input-field" type="text" placeholder="Address" name="usrnm">
+            </div>
+
+            <button type="submit" class="btnser">Next</button>
+
+    </section>
+    <footer class="footer">
+
+        <div class="social">
+            <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+            <u1 class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </u1>
+            <p class="copyright">
+                © FlourPower | All Rights Reserved
+            </p>
+        
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
