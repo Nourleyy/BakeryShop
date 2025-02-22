@@ -1,0 +1,111 @@
+.review {
+    padding: 7rem;
+}
+.review h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: #f60;
+}
+.review h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.review-container {
+    overflow: hidden;
+    width: 70%;
+    position: relative;
+    margin: 0 auto; 
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+}
+.review-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+}
+.review-box {
+    flex: 0 0 100%;
+    max-width: 100%; 
+    box-sizing: border-box; 
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.review-box .fa-quote-right {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+    opacity: 0.3;
+}
+.review-box .author {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    margin-left:2rem;
+}
+.review-box .author img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-box .author .author-content {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.review-box .author .author-content .stars{
+    color:#f60;
+}
+.review-box p {
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.reviewbtn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 8rem 0rem 0rem 0rem;
+    gap: 2rem;
+}
+.rev-btn {
+    padding: 1rem 1.5rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+}
+.rev-btn i {
+    padding-left: 1rem;
+}
+.rev-btn:hover {
+    color: #f60;
+}
+.review-container .fa {
+    font-size: 5rem;
+    cursor: pointer;
+    padding: 2rem;
+    position: absolute;
+    top: 70%; 
+    transform: translateY(-50%); 
+    color: #f60;
+    opacity:0.3;
+}
+.review-container .fa:hover{
+    opacity:1;
+}
+#prev {
+    left: 0rem;
+}
+#next {
+    right: 0rem;
+}
+

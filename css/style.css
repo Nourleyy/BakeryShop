@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fleur+De+Leah&family=Ms+Madi&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family: 'Reddit Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+:root {
+    --orange: #ffa500;
+}
+
+*::selection {
+    background-color: var(--orange);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 9%;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+.navbar a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 3rem;
+}
+
+.navbar a:hover {
+    color: var(--orange);
+}
+
+header i{
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+header i:hover{
+    color: var(--orange);
+}
+
+#logo {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+    font-weight:600;
+}
+
+#logo span {
+    font-family: 'Fleur De Leah';
+    font-size: 3rem;
+    text-decoration: none;
+    background: linear-gradient(90deg,#f60, #f90);
+    background-clip: text;
+    color: transparent;
+    padding-left:1rem;
+}
+ 
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background-color:rgb(0, 0, 0, 0.7);
+    border-top: .1rem solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+
+}
+
+header .search-bar-container label {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: #ffa500;
+}
+
+.login-form-container{
+    position: fixed;
+    top:-120%;
+    left:0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background:rgba(0,0,0,.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container form{
+   padding:3.5rem 2.6rem;
+   border-radius: 1rem;
+   background: #fff;
+   width:50rem;
+}
+
+.login-form-container form h3{
+    font-size: 3rem;
+    background: linear-gradient(90deg,#f60, #f90);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    padding:1rem 0;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin:1rem 0;
+    border: .1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .2);
+}
+
+.login-form-container form .box:focus{
+    border-color: var(--orange);
+}
+
+.login-form-container form .btn{
+    display:block;
+    padding:1rem 2rem;
+    border: .1rem solid var(--orange);
+    background: linear-gradient(90deg,#f60, #f90);
+    color: white;
+    cursor:pointer;
+    text-transform: capitalize;
+    border-radius: 2rem;
+    font-weight: 500;
+    width:100%;
+    margin-bottom:2rem;
+}
+.login-form-container form .btn:hover{
+    background: linear-gradient(90deg, #f90, #f60);
+}
+.login-form-container form #remember{
+    margin:2rem .4rem;
+}
+.login-form-container form label{
+    font-size: 1.5rem;
+}
+.login-form-container a{
+    display:block;
+    font-size: 1.5rem;
+    padding-top:1rem;
+    text-align: center;
+    color:#f60
+}
+.login-form-container a:hover{
+    text-decoration: underline;
+}
+#form-close{
+    position:absolute;
+    right:3rem;
+    top:2rem;
+    font-size: 3rem;
+    color: #f60;
+    cursor: pointer;
+}
+.login-form-container.active{
+    top:0;
+}
+#menu-bar{
+    font-size: 2.5rem;
+    cursor:pointer;
+    display:none;
+
+}
+section{
+  padding:2rem 9%;
+}
+.home{
+    min-height: 100vh;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content{
+    text-align: center;
+}
+.content h3{
+    font-size: 6rem;
+    padding:.7rem;
+    text-shadow: 0 .1rem 2rem rgba(0, 0, 0, 0.9);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: 2rem;
+    letter-spacing: 1rem;
+}
+.content p{
+    font-size: 2.5rem;
+    padding:.7rem;
+    text-shadow: 0 .1rem 2rem rgba(0, 0, 0, 0.9);
+    margin-bottom: 3rem;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 2rem;
+    letter-spacing: 1rem;
+}
+.content .btn{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:1rem 2rem;
+    border-radius: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right:1rem;
+    letter-spacing: 0.2rem;
+}
+.content .btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: #f60;
+    
+    
+}
+.controls .vid-btn{
+    background: rgba(255, 255, 255, 0.8);
+    padding:1rem;
+    border-radius: 1rem;
+    margin-top:5rem;
+    cursor: pointer;
+    margin-right:.5rem;
+}
+.controls .vid-btn:hover{
+    background-color: #f60;
+}
+.controls .vid-btn.active{
+background:#f60;
+}
+.home .video-ctr video{
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    z-index:-1;
+    height:100%;
+    width:100%;
+   
+}
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:991px){
+    header{
+        padding:1rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media(max-width:840px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%;
+        right:0;
+        left:0;
+        background: #000000;
+        border-top: .1rem solid black;
+        padding:1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display:block;
+        border-radius: .5rem;   
+        border-top: .1rem solid black;
+        padding:1.5rem;
+        margin:1.5rem 0;
+        background-color: #222;
+        color: #f90;
+        letter-spacing: 0.2rem;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
